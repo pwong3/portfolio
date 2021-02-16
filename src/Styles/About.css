@@ -1,0 +1,64 @@
+.about-section {
+  background-color: grey;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.section-div {
+  margin-top: 2.5%;
+  margin-bottom: 5%;
+}
+
+.avatar {
+  border-radius: 30px;
+  width: 10rem;
+  height: 10rem;
+  margin-top: 1rem;
+  margin-right: 10%;
+}
+
+.about-div {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.about-text-col h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: white;
+}
+
+.about-text-col p {
+  line-height: 1.5rem;
+  color: rgb(66, 66, 66);
+  padding: 0 0 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.download-button {
+  text-decoration: none;
+  color: white;
+  background-color: darkgrey;
+  padding: 0.75rem;
+  border-radius: 2px;
+}
+
+.download-button:hover {
+  background-color: rgb(43, 122, 215);
+}
+@media only screen and (max-width: 900px) {
+  .avatar {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .avatar {
+    display: none;
+  }
+}

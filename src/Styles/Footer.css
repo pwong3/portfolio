@@ -1,0 +1,35 @@
+.footer {
+  height: 150px;
+  background-color: grey;
+}
+.footer-icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footer-icon a{
+  padding: 0.5rem;
+  color: white;
+}
+.footer-icon a:hover {
+  color: red;
+}
+.up-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: black;
+  background-color: lightgrey;
+  border-radius: 20px;
+}
+.up-arrow:hover{
+  color: white;
+  background-color: rgb(43, 122, 215);
+}

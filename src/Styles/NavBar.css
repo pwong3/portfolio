@@ -1,0 +1,120 @@
+.nav-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: black;
+  opacity: 0.75;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+.navbar-logo {
+  color: white;
+  text-decoration: none;
+  justify-self: left;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.navbar-logo:hover {
+  color: rgb(43, 122, 215);
+}
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-row: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+  color: rgb(43, 122, 215);
+  /* background-color: rgb(149, 202, 252);
+  border-radius: 4px; */
+  transition: all 0.2s ease-out;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  /* NAVBAR */
+  .nav-header {
+    background: black;
+    opacity: .75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;  
+  }
+  .navbar-logo {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 45%);
+    z-index: 2;
+  }  
+
+  .menu-icon {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-70%, 20%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .menu-icon:hover {
+    color: rgb(43, 122, 215);
+  }
+  .nav-menu {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: -340px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    padding: 0%;
+    margin: 0;
+  }
+  .nav-menu.active {
+    background: black;
+    top: 50px;
+    left: 0;
+    transition: all 0.5s ease;  
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+  }
+  .nav-links {
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    display: table;
+  }
+  .nav-links:hover {
+    color: rgb(43, 122, 215);
+    border-radius: 0;
+  }
+}
