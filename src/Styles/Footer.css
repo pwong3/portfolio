@@ -1,19 +1,29 @@
 .footer {
   height: 150px;
-  background-color: grey;
+  background-color: rgb(88, 88, 88);
 }
-.footer-icon{
+
+.footer-h1 {
+  font-weight: normal;
+  color: white;
+}
+
+.footer-icon {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-content: center;
 }
-.footer-icon a{
-  padding: 0.5rem;
+
+.footer-icon a {
+  padding: 1rem;
   color: white;
 }
+
 .footer-icon a:hover {
-  color: red;
+  color: rgb(43, 122, 215);
 }
+
 .up-arrow {
   display: flex;
   justify-content: center;
@@ -29,7 +39,8 @@
   background-color: lightgrey;
   border-radius: 20px;
 }
-.up-arrow:hover{
+
+.up-arrow:hover {
   color: white;
   background-color: rgb(43, 122, 215);
 }

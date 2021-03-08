@@ -15,9 +15,9 @@
 
 /* Position the navbar container inside the image */
 
-.home-text {
+.home-text-box {
   background-color: black;
-  width: 75%;
+  width: 55%;
   opacity: 0.75;
   border-radius: 25px;
   text-align: center;
@@ -29,26 +29,30 @@
   padding: 1rem;
 }
 
-.home-text h1 {
+.home-text-box h1 {
   color: white;
   opacity: 1;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
   font-size: 5rem;
   margin: 1rem 1.5rem 0 1.5rem;
 }
 
-.home-text h3 {
+.home-text-box h3 {
   color: white;
   opacity: 1;
   font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
   padding: 0 4rem 0.5rem;
 }
 
-.home-text hr {
+.home-text-box hr {
   border: 1px solid rgba(255, 255, 255, 0.3);
   width: 60%;
 }
 
-.home-text div {
+.home-text-box div {
   padding: 0.5rem;
 }
 
@@ -59,7 +63,7 @@
 }
 
 .home-icon a:hover {
-  color: rgb(248, 217, 188);
+  color: rgb(43, 122, 215);
 }
 
 .down-arrow {
@@ -81,17 +85,18 @@
 
 .down-arrow:hover {
   color: white;
-  background-color: rgb(111, 93, 69);
+  background-color: rgb(43, 122, 215);
 }
 
 @media only screen and (max-width: 900px) {
-  .home-text h1 {
+  .home-text-box h1 {
     color: white;
     opacity: 1;
     font-size: 2.5rem;
     margin: 0.5rem;
+    transition: width 1s ease-in-out;
   }
-  .home-text h3 {
+  .home-text-box h3 {
     color: white;
     opacity: 1;
     font-size: 1rem;

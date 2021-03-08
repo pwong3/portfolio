@@ -1,7 +1,12 @@
-.resume-section {
-  background-color: grey;
+.experience-section {
+  background-color: rgb(165, 165, 165);
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.experience-title {
+  font-size: 2rem;
+  font-weight: normal;
 }

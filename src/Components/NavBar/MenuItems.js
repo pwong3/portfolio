@@ -10,15 +10,15 @@ export const MenuItems = [
     cName: 'nav-links',
   },
   {
-    href: '#work',
-    title: 'Work',
+    href: '#projects',
+    title: 'Projects',
     cName: 'nav-links',
   },
-  {
-    href: '#experience',
-    title: 'Experience',
-    cName: 'nav-links',
-  },
+  // {
+  //   href: '#experience',
+  //   title: 'Experience',
+  //   cName: 'nav-links',
+  // },
   {
     href: 'https://drive.google.com/uc?export=pdf&id=1fBDIb69zRW6v6Vx9kmfgn-jBNwO8eIsI',
     title: 'Resume',

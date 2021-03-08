@@ -2,26 +2,29 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background: black;
-  opacity: 0.75;
+  background-color: rgba(0, 0, 0, 0.35);
   height: 50px;
   display: flex;
   justify-content: center;
+  align-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
   z-index: 2;
+  transition: all 1s ease;
+}
+
+.scroll {
+  background-color: rgba(20, 20, 20, 0.95);
+  transition: all 1s ease;
 }
 
 .navbar-logo {
-  color: white;
-  text-decoration: none;
+  margin-top: 0.25rem;
   justify-self: left;
-  margin-left: 2rem;
   cursor: pointer;
 }
-.navbar-logo:hover {
-  color: rgb(43, 122, 215);
-}
+
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(6, auto);
@@ -34,6 +37,7 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
 .nav-links {
   color: white;
   text-decoration: none;
@@ -51,32 +55,31 @@
   display: none;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
   /* NAVBAR */
   .nav-header {
-    background: black;
-    opacity: .75;
+    background: rgb(20, 20, 20);
+    opacity: .95;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;  
+    font-size: 1.2rem;
   }
   .navbar-logo {
     color: white;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(0%, 45%);
+    transform: translate(50%, 15%);
     z-index: 2;
-  }  
-
+  }
   .menu-icon {
     display: block;
     color: white;
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-70%, 20%);
+    transform: translate(-50%, 30%);
     font-size: 1.8rem;
     cursor: pointer;
     z-index: 2;
@@ -85,24 +88,26 @@
     color: rgb(43, 122, 215);
   }
   .nav-menu {
-    background: black;
+    background: rgb(20, 20, 20);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
     position: absolute;
     left: 0;
-    top: -340px;
+    top: -345px;
     opacity: 1;
     transition: all 0.5s ease;
     padding: 0%;
     margin: 0;
   }
   .nav-menu.active {
-    background: black;
+    background: rgb(20, 20, 20);
     top: 50px;
     left: 0;
-    transition: all 0.5s ease;  
+    transition: all 0.5s ease;
     padding: 0;
     margin: 0;
     z-index: 1;
@@ -111,7 +116,8 @@
     text-align: center;
     width: 100%;
     padding: 1rem;
-    display: table;
+    display: table-cell;
+    vertical-align: middle;
   }
   .nav-links:hover {
     color: rgb(43, 122, 215);

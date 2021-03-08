@@ -1,9 +1,14 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
 .about-section {
-  background-color: grey;
+  background-color: rgb(165, 165, 165);
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .section-div {
@@ -16,33 +21,86 @@
   width: 10rem;
   height: 10rem;
   margin-top: 1rem;
-  margin-right: 10%;
 }
 
 .about-div {
   display: flex;
   flex: 1;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
-.about-text-col h1 {
+.about-right-col {
+  margin-left: 10%;
+}
+
+.about-education-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-education-right-col {
+  margin-left: 10%;
+}
+
+.sfsu-header {
+  display: flex;
+  align-items: center;
+}
+
+.sfsu-logo {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  height: 5rem;
+}
+
+.sfsu-div {
+  margin-top: 1rem;
+}
+
+.coursework {
+  columns: 20rem 2;
+  list-style-type: circle;
+}
+
+#college-name {
+  color: black;
+}
+
+#college-text {
+  color: black;
+  font-size: 1.25rem;
+}
+
+.about-right-col h1, .about-skills-div h1, .about-education-div>h1 {
   font-size: 2rem;
   font-weight: normal;
   color: white;
 }
 
-.about-text-col p {
+.about-right-col p {
   line-height: 1.5rem;
-  color: rgb(66, 66, 66);
+  color: black;
   padding: 0 0 0.5rem;
   margin-bottom: 2.5rem;
+}
+
+.about-skills-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .download-button {
   text-decoration: none;
   color: white;
-  background-color: darkgrey;
+  background-color: rgb(105, 105, 105);
   padding: 0.75rem;
   border-radius: 2px;
 }
@@ -50,15 +108,27 @@
 .download-button:hover {
   background-color: rgb(43, 122, 215);
 }
+
 @media only screen and (max-width: 900px) {
   .avatar {
     width: 7rem;
     height: 7rem;
+  }
+  .about-skills-div, .about-education-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 @media only screen and (max-width: 700px) {
   .avatar {
     display: none;
+  }
+  .sfsu-logo {
+    display: none;
+  }
+  .coursework {
+    padding-left: 12px;
   }
 }
