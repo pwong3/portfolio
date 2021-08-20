@@ -20,7 +20,8 @@ export const MenuItems = [
   //   cName: 'nav-links',
   // },
   {
-    href: 'https://drive.google.com/uc?export=pdf&id=1fBDIb69zRW6v6Vx9kmfgn-jBNwO8eIsI',
+    href:
+      'https://drive.google.com/uc?export=pdf&id=1fBDIb69zRW6v6Vx9kmfgn-jBNwO8eIsI',
     title: 'Resume',
     cName: 'nav-links',
   },
@@ -28,5 +29,5 @@ export const MenuItems = [
     href: '#contact',
     title: 'Contact',
     cName: 'nav-links',
-  }
-]
+  },
+];

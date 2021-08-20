@@ -13,6 +13,11 @@
   /* cursor: pointer; */
 }
 
+.skill-card:hover {
+  box-shadow: 0px 5px 15px;
+  transform: scale(1.08);
+}
+
 .skill-card p {
   display: flex;
   justify-content: center;
@@ -37,11 +42,6 @@
   overflow: hidden;
 }
 
-.skill-card:hover {
-  box-shadow: 0px 5px 15px;
-  transform: scale(1.08);
-}
-
 .modal {
   position: fixed;
   top: 50%;
@@ -55,6 +55,7 @@
   width: 500px;
   max-width: 80%;
 }
+
 .modal-header {
   padding: 10px 15px;
   display: flex;

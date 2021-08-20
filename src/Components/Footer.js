@@ -12,6 +12,8 @@ function Footer() {
         <FaAngleUp />
       </a>
       <div>
+        <p>Interested in what I'm working on?</p>
+        <p>Feel free to contact me at PatrickYCWong@gmail.com.</p>
         <div className='footer-icon'>
           <Icon href={Links.mailTo} icon={<FaRegEnvelope size='2rem' />} />
           <Icon href={Links.linkedIn} icon={<FaLinkedinIn size='2rem' />} />

@@ -1,5 +1,5 @@
 .footer {
-  height: 150px;
+  height: auto;
   background-color: rgb(88, 88, 88);
 }
 
@@ -8,6 +8,11 @@
   color: white;
 }
 
+.footer p {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
 .footer-icon {
   display: flex;
   flex-direction: row;

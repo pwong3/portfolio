@@ -19,6 +19,7 @@
   border-style: solid;
   border-color: grey;
   border-radius: 3px;
+  box-shadow: 0px 5px 15px grey;
 }
 
 .card-title {
@@ -35,7 +36,7 @@
   padding: 0.5rem 1rem;
 }
 
-.project-card-youtube-container {
+/* .project-card-youtube-container {
   position: relative;
   width: 100%;
   height: 0;
@@ -43,14 +44,17 @@
   border: 1.5rem solid;
   border-color: rgb(255, 93, 93);
   transition: border 1s ease-in-out;
-}
+} */
 
 .project-card-youtube {
-  position: absolute;
+  aspect-ratio: 16/9;
+  border: 1.5rem solid;
+  border-color: rgb(255, 93, 93);
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .project-icon a, .link {
@@ -64,9 +68,14 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .project-card-youtube-container {
+  /* .project-card-youtube-container {
     border: 0.5rem solid;
     border-color: rgb(255, 93, 93);
     transition: border 1s ease-in-out;
+  } */
+  .project-card-youtube {
+    border: 0.5rem solid;
+    border-color: rgb(255, 93, 93);
+    width: 100%;
   }
 }

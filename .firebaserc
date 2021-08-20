@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "portfolio-e9398"
+  },
+  "targets": {
+    "portfolio-e9398": {
+      "hosting": {
+        "patsite": [
+          "patrickycwong"
+        ]
+      }
+    }
+  }
+}
