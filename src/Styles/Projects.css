@@ -27,7 +27,8 @@
   font-weight: normal;
 }
 
-.project-card-header, .project-card-desc {
+.project-card-header,
+.project-card-desc {
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -57,17 +58,23 @@
   /* height: 100%; */
 }
 
-.project-icon a, .link {
+.project-icon a,
+.link {
   text-decoration: none;
   margin: 5px;
   color: rgb(43, 122, 215);
 }
 
-.project-icon a:hover, .link:hover {
+.project-icon a:hover,
+.link:hover {
   color: rgba(43, 122, 215, 0.4);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
+  .project-section {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
   /* .project-card-youtube-container {
     border: 0.5rem solid;
     border-color: rgb(255, 93, 93);

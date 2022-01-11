@@ -12,6 +12,7 @@
   color: white;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .footer-icon {
   display: flex;

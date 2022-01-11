@@ -72,7 +72,9 @@
   font-size: 1.25rem;
 }
 
-.about-right-col h1, .about-skills-div h1, .about-education-div>h1 {
+.about-right-col h1,
+.about-skills-div h1,
+.about-education-div > h1 {
   font-size: 2rem;
   font-weight: normal;
   color: white;
@@ -110,12 +112,17 @@
   box-shadow: 0px 0px 10px rgb(43, 122, 215);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
+  .about-section {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
   .avatar {
     width: 7rem;
     height: 7rem;
   }
-  .about-skills-div, .about-education-div {
+  .about-skills-div,
+  .about-education-div {
     flex-direction: column;
     justify-content: center;
     align-items: center;

@@ -11,23 +11,23 @@ function Home() {
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
-    }
-  })
+    };
+  });
   return (
     <section id='home'>
       <div className='home-img' style={{ height: height }}>
         <div className='home-text-box'>
           <h1>Patrick Wong</h1>
-          <h3>
-            Software Engineer in San Francisco Bay Area
-          </h3>
+          <h3>Software Engineer in San Francisco Bay Area</h3>
           <hr />
           <div className='home-icon'>
             <Icon href={Links.linkedIn} icon={<FaLinkedinIn size='2rem' />} />
             <Icon href={Links.gitHub} icon={<FaGithub size='2rem' />} />
           </div>
         </div>
-        <a className='down-arrow' href='#aboutme'><FaAngleDown /></a>
+        <a className='down-arrow' href='#aboutme'>
+          <FaAngleDown />
+        </a>
       </div>
     </section>
   );

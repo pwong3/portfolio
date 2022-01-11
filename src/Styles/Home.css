@@ -1,6 +1,6 @@
 .home-img {
   /* The image used */
-  background: url("../Resources/background.jpg");
+  background: url('../Resources/background.jpg');
   min-height: 500px;
   width: 100%;
   /* Center and scale the image nicely */
@@ -17,7 +17,7 @@
 
 .home-text-box {
   background-color: black;
-  width: 55%;
+  width: 65%;
   opacity: 0.75;
   border-radius: 25px;
   text-align: center;
@@ -88,7 +88,10 @@
   background-color: rgb(43, 122, 215);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
+  .home-text-box {
+    width: 75%;
+  }
   .home-text-box h1 {
     color: white;
     opacity: 1;
