@@ -10,7 +10,7 @@ import '../Styles/About.css';
 function About() {
   return (
     <section className='about-section' id='aboutme'>
-      <div className='about-div'>
+      <article className='about-div'>
         <img className='avatar' src={mePhoto} alt='profile pic' />
         <div className='about-right-col'>
           <h1>About Me</h1>
@@ -31,11 +31,9 @@ function About() {
             <FaDownload /> Download Resume
           </a>
         </div>
-      </div>
-      <br />
-      <br />
+      </article>
       <hr />
-      <div className='about-skills-div'>
+      <article className='about-skills-div'>
         <h1>Skills</h1>
         <div className='about-skills-row'>
           {Skills.map((skill, index) => {
@@ -51,11 +49,9 @@ function About() {
             );
           })}
         </div>
-      </div>
-      <br />
-      <br />
+      </article>
       <hr />
-      <div className='about-education-div'>
+      <article className='about-education-div'>
         <h1>Education</h1>
         <div className='about-education-right-col'>
           <div className='sfsu-header'>
@@ -80,7 +76,7 @@ function About() {
             <li>Artificial Intelligence</li>
           </ul>
         </div>
-      </div>
+      </article>
     </section>
   );
 }

@@ -5,7 +5,6 @@ import jsLogo from '../../Resources/JS_logo.png';
 import reactLogo from '../../Resources/react_logo.png';
 import githubLogo from '../../Resources/github_logo.png';
 import javaLogo from '../../Resources/java_logo.jpg';
-// import cppLogo from '../../Resources/c++_logo.jpg';
 
 export const Skills = [
   {
@@ -54,10 +53,4 @@ export const Skills = [
     alt: 'javaLogo',
     image: javaLogo,
   },
-  // {
-  //   name: 'C++',
-  //   color: 'rgb(0, 89, 155)',
-  //   alt: 'C++Logo',
-  //   image: cppLogo,
-  // },
 ];
